@@ -10,16 +10,12 @@
   box-shadow: -4px 33px 33px -4px rgba(0, 0, 0, 0.08);
 }
 
-.section-home{
-    margin-top: 2%;
-}
-
 .containerhome {
   display: flex;
-  flex-direction: row;
   width: 80%;
   margin: 0 10%;
   align-items: center;
+  height: 100vh;
   /* border: 2px solid rgb(231, 255, 15); */
 
 }
@@ -70,6 +66,43 @@
 }
 
 .photo img {
-  width: 40rem;
+  width: 39rem;
   height: auto;
+}
+
+.section-aboutme{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 10%;
+    /* border: 3px solid red; */
+}
+
+.background-inf{
+    background-color: rgb(55, 8, 55);
+    padding: 3%;
+}
+
+.container-img{
+    width: 65%;
+    justify-content: start;
+    /* border: 3px solid green; */
+}
+
+.container-inf{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 3px solid gray; */
+
+}
+
+.container-inf h2{
+    color: white;
+    font-size: 80px;
+}
+
+.container-inf p{
+    color: white;
 }

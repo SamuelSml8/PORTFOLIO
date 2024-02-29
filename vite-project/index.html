@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="box navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="box navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand brand" href="#">
           <img
@@ -44,7 +44,7 @@
               <a class="nav-link active" aria-current="page" href="#home"
                 >Home</a
               >
-              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#aboutme">About me</a>
               <a class="nav-link" href="#">Projects</a>
               <a class="nav-link" aria-disabled="true">Contact</a>
             </div>
@@ -53,7 +53,7 @@
       </div>
     </nav>
 
-    <section class="home section-home" id="home">
+    <section class="home section" id="home">
       <div class="containerhome">
         <div class="title-description">
           <h1 class="home-title">Software Developer</h1>
@@ -74,6 +74,24 @@
         </div>
       </div>
     </section>
+
+    <section class="section background-inf" id="aboutme">
+      <div class="section-aboutme">
+        <div class="container-img photo">
+          <img src="./public/assets/sectionInf.svg" alt="" />
+        </div>
+        <div class="container-inf">
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            maiores dolorem in laborum atque! Odio tenetur omnis ipsa, error
+            quibusdam soluta aut delectus mollitia, nostrum esse, odit quasi
+            deleniti distinctio.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./main.js"></script>
   </body>
