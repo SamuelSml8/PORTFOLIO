@@ -1,11 +1,21 @@
-const copyBtn = document.querySelector("#copy-btn")
+// JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+  const copyButton = document.getElementById("copy-btn");
+  const emailAddress = document.querySelector(".home-email");
 
-function copiarAlPortapapeles(copyBtn) {
-    var aux = document.createElement("input");
-    aux.setAttribute("value", document.getElementById(copyBtn).innerHTML);
-    document.body.appendChild(aux);
-    aux.select();
-    document.execCommand("copy");
-    document.body.removeChild(aux);
-  }
-
+  copyButton.addEventListener("click", function () {
+    const textToCopy = emailAddress.textContent;
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        copyButton.innerHTML =
+          '<box-icon name="check-circle" color="green"></box-icon>';
+        setTimeout(() => {
+          copyButton.innerHTML = '<box-icon name="copy"></box-icon>';
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error("Error al copiar el texto: ", err);
+      });
+  });
+});

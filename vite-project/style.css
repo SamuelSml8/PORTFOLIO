@@ -128,16 +128,18 @@
 .container-skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 10%;
   width: auto;
   height: 100vh;
-  /* border: 3px solid red; */
+  background-image: url(./public/assets/texture.png)
 }
 
 .container-skills h2 {
   font-size: 4rem;
   margin-bottom: 5%;
+  font-weight: 500;
 }
 
 .skill {
