@@ -18,8 +18,12 @@
   align-items: center;
 }
 
-.title-description {
-/* background-color: red; */
+.container-navlinks{
+    margin-right: 12%;
+}
+
+.brand{
+    margin-left: 8.5%;
 }
 
 .home-title {

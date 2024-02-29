@@ -15,7 +15,7 @@
   <body>
     <nav class="box navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand ml-" href="#">
+        <a class="navbar-brand brand" href="#">
           <img
             src="./public/assets/samuel.png"
             alt="logo"
@@ -35,17 +35,19 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-center nav-links"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link fs-5 active" aria-current="page" href="#home"
-              >Home</a
-            >
-            <a class="nav-link fs-5" href="#">About me</a>
-            <a class="nav-link fs-5" href="#">Projects</a>
-            <a class="nav-link fs-5" aria-disabled="true">Contact</a>
+        <div class="container-navlinks">
+          <div
+            class="collapse navbar-collapse nav-links"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" aria-disabled="true">Contact</a>
+            </div>
           </div>
         </div>
       </div>
@@ -62,7 +64,9 @@
           </p>
           <div class="copy-email">
             <p class="home-email">veramirandasamuel6@gmail.com</p>
-            <button class="copy-btn"><box-icon name="copy"></box-icon></button>
+            <button class="copy-btn" id="copy-btn">
+              <box-icon name="copy"></box-icon>
+            </button>
           </div>
         </div>
         <div class="photo">
@@ -71,5 +75,6 @@
       </div>
     </section>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
