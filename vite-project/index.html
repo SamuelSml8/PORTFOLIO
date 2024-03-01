@@ -1,13 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Samuel | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="box navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand brand" href="#">
+          <img
+            src="./public/assets/samuel.png"
+            alt="logo"
+            width="50"
+            height="50"
+          />
+          Samuel Sml</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-navlinks">
+          <div
+            class="collapse navbar-collapse nav-links"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+              <a class="nav-link" href="#aboutme">About me</a>
+              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" aria-disabled="true">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <script type="module" src="/main.js"></script>
+    <section class="home section" id="home">
+      <div class="containerhome">
+        <div class="title-description">
+          <h1 class="home-title">Software Developer</h1>
+          <p class="home-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+            aliquam amet, dolorum veniam mollitia magni tenetur vitae libero
+            unde quod.
+          </p>
+          <div class="copy-email">
+            <p class="home-email">veramirandasamuel6@gmail.com</p>
+            <button class="copy-btn" id="copy-btn">
+              <box-icon name="copy"></box-icon>
+            </button>
+          </div>
+        </div>
+        <div class="photo">
+          <img src="./public/assets/home1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section background-inf" id="aboutme">
+      <div class="section-aboutme">
+        <div class="container-img photo">
+          <img src="./public/assets/sectionInf.svg" alt="" />
+        </div>
+        <div class="container-inf">
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            maiores dolorem in laborum atque! Odio tenetur omnis ipsa, error
+            quibusdam soluta aut delectus mollitia, nostrum esse, odit quasi
+            deleniti distinctio.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container-skills">
+        <h2>SKILLS</h2>
+        <div class="img-skills">
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/f2ce4039c99cf35adde738583ab0fbcd60eaafccf1e949884bda91d0b5c819ce/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2e737667"
+            alt="html"
+          />
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/0da944f181647261c840e34b20ed7e3ca44ddc150869c6ea550cf98d06c81a37/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2e737667"
+            alt="css"
+          />
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/9ee806be83385d8b6a369a74cb1fc746644521a279ba959174ce5b9e75caf384/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f626f6f7473747261702f626f6f7473747261702d6f726967696e616c2e737667"
+            alt="bootstrap"
+          />
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/16bbe3c62e06c0099a8bd86816b7993b3eb49d8cd21eb74c7bff7db7dc3787b7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667"
+            alt="javascript"
+          />
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/973913d161ca9ac03d1e941e3c0a9785dd928059a48274ed2b3ff564b5c564b2/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176612f6a6176612d6f726967696e616c2e737667"
+            alt="java"
+          />
+          <img
+            class="skill"
+            src="https://camo.githubusercontent.com/5e956ea0943b5a05092e94d7376582051e61fe84af215ad6e35334a2d61b658a/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6d7973716c2f6d7973716c2d6f726967696e616c2e737667"
+            alt="sql"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+      <h2>PROJECTS</h2>
+      <div class="container-cards-projects">
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">VISIT</h5>
+            <p class="card-text">
+              Embark on a journey through Medellín and Antioquia. Explore, discover, and delight with VISIT
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Space X</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Coders to hire</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Wooden House</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Cinemark</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Coders list</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">CRUD JSON-SERVER</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Vacancy´s Riwi</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="./public/assets/samuel.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Eco</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go to project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container d-flex justify-content-center ">
+        <span class="text-muted"> Samuel Sml © Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
