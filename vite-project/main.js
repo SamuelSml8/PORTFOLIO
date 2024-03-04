@@ -19,3 +19,32 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+const formContact = document.querySelector("#form-contact");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const textAreaInput = document.querySelector("#textarea");
+
+formContact.addEventListener("submit", () => {
+  fieldsValidation();
+});
+
+function fieldsValidation() {
+  if (nameInput.value == "" && emailInput.value == "" && textAreaInput.value == "") {
+    Swal.fire({
+      position: "center",
+      icon: "warning",
+      title: "The fields are required",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  } else {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your message was sent",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
+}

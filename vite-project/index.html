@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/code-tech-dev-icon-512x448-gc8hejmy.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -317,13 +318,13 @@
     <section class="footer-section" id="contact">
       <div class="formulario-container">
         <h2 class="title-contact">CONTACT ME</h2>
-        <form>
+        <form id="form-contact">
           <label>Name</label>
-          <input class="input name" type="text" />
+          <input id="name" class="input name" type="text" />
           <label>Mail</label>
-          <input class="input mail" type="email" />
+          <input id="email" class="input mail" type="email" />
           <label>Message</label>
-          <textarea class="input textarea" name="" id="contact-message" cols="50" rows="8"></textarea>
+          <textarea id="textarea" class="input textarea" name="" id="contact-message" cols="50" rows="8"></textarea>
           <button class="btn-form" type="submit">Enviar</button>
         </form>
       </div>
