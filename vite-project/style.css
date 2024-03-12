@@ -223,3 +223,16 @@ label{
   color: white;
   border: none;
 }
+
+.activities-container{
+  margin: 5%;
+  text-align: center;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin: 2%;
+}
